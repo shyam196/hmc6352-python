@@ -1,3 +1,4 @@
+from __future__ import division # backport python3 division to python2
 import smbus
 
 class HMC6352:
@@ -5,7 +6,7 @@ class HMC6352:
     Class for an HMC6352 digital compass
 
     Simple functionality -- does not implement anything except getting a heading from the device
-    except in "standby" mode (see datasheet -- this is the default mode of the device)
+    in "standby" mode (see datasheet -- this is the default mode of the device)
 
     Tested with Python 3.5
 
